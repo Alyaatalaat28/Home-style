@@ -1,21 +1,39 @@
-// import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
+import '../constants.dart';
 
-// import '../constants.dart';
-
-// class CustomButton extends StatelessWidget {
-//   const CustomButton({super.key,this.width=306,this.height=96});
-//   final double width;
-//   final double height;
-//   Function onPressed;
-//   @override
-//   Widget build(BuildContext context) {
-//     return  Container(
-//       width:width ,
-//       height:height ,
-//       decoration: const BoxDecoration(
-//         color: buttonColor,
-//       ),
-//       child: TextButton(onPressed: onPressed, child: Text()),
-//     );
-//   }
-// }
+class CustomButton extends StatelessWidget {
+  const CustomButton({super.key,this.onPressed,required this.text});
+  final void Function()? onPressed;
+  final String text;
+  @override
+  Widget build(BuildContext context) {
+    return  Container(
+      width:306 ,
+      height:56 ,
+      decoration: const BoxDecoration(
+        color: buttonColor,
+        borderRadius: BorderRadius.all(Radius.circular(50))
+      ),
+      child: TextButton(
+        onPressed:onPressed ,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+           const Image(
+            image: AssetImage('assets/images/google.png'),
+            height: 20,
+            width: 20,
+           ),
+           const SizedBox(width:5),
+            Text(text,
+            style: const TextStyle(
+              fontWeight: FontWeight.w700,
+              fontSize:15 ,
+              color:textWColor,
+            ),),
+          ],
+        ),
+      ),
+    );
+  }
+}
