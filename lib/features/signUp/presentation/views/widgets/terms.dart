@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../core/constants.dart';
+import '../../../../../core/style.dart';
 
 class TermsAndServices extends StatelessWidget {
   const TermsAndServices({super.key});
@@ -12,13 +13,11 @@ class TermsAndServices extends StatelessWidget {
         Checkbox(
           value: false,
            onChanged: (value){ }),
-           const Text('I agree with the Terms of Service and Privacy policy',
+            Text('I agree with the Terms of Service and Privacy policy',
            maxLines: 2,
-           style: TextStyle(
-            fontSize:12 ,
-            fontWeight:FontWeight.w700 ,
-            color:textWColor ,
-           ),)
+           style: AppStyle.textStyle15.copyWith(
+            fontSize: 12,
+           ))
       ],
     );
   }

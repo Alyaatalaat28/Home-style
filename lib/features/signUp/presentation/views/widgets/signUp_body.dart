@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:home_style/features/signUp/presentation/views/widgets/terms.dart';
 
 import '../../../../../core/constants.dart';
+import '../../../../../core/style.dart';
 import '../../../../../core/widgets/custom_button.dart';
 import '../../../../../core/widgets/custom_text_form_field.dart';
 import '../../../../../core/widgets/divider_row.dart';
@@ -25,12 +26,8 @@ class SignUpViewBody extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const Text('Sign up to Decorum!',
-            style: TextStyle(
-              color:textWColor ,
-              fontSize:30 ,
-              fontWeight:FontWeight.w700 ,
-            ),
+             Text('Sign up to Decorum!',
+            style: AppStyle.textStyle,
             ),
             const SizedBox(height: 15.0,),
             const CustomButton(text: 'Sign up with Google',),
@@ -58,7 +55,7 @@ class SignUpViewBody extends StatelessWidget {
             ),
             const SizedBox(height: 5.0,),
             const TermsAndServices(),
-           AnotherOptions(),
+           const AnotherOptions(),
         
           ],
         ),

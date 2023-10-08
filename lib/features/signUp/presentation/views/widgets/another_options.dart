@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../core/constants.dart';
+import '../../../../../core/style.dart';
 import 'create_account_button.dart';
 
 class AnotherOptions extends StatelessWidget {
@@ -15,20 +16,12 @@ class AnotherOptions extends StatelessWidget {
           Row(
             mainAxisAlignment:MainAxisAlignment.center,
             children: [
-              const Text('Already have an account?',
-              style: TextStyle(
-                color:textWColor ,
-                fontSize:15 ,
-                fontWeight:FontWeight.w700,
-              ),),
+               Text('Already have an account?',
+              style: AppStyle.textStyle15),
           TextButton(
             onPressed: (){},
-            child:const Text('Login',
-          style: TextStyle(
-            color:buttonColor,
-            fontSize:15 ,
-            fontWeight:FontWeight.w700,
-          ),)),
+            child: Text('Login',
+          style:AppStyle.textStyle15Black)),
             ]),
           ]
     );

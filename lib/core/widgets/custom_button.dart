@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../constants.dart';
+import '../style.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton({super.key,this.onPressed,required this.text});
@@ -26,11 +27,10 @@ class CustomButton extends StatelessWidget {
            ),
            const SizedBox(width:5),
             Text(text,
-            style: const TextStyle(
-              fontWeight: FontWeight.w700,
-              fontSize:15 ,
-              color:textWColor,
-            ),),
+            style: AppStyle.textStyle.copyWith(
+              fontSize: 15,
+            ),
+            ),
           ],
         ),
       ),

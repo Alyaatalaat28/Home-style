@@ -3,6 +3,7 @@ import 'package:home_style/features/welcome/preentation/views/widgets/sign_up_bu
 import 'package:home_style/features/welcome/preentation/views/widgets/stack_widget.dart';
 
 import '../../../../../core/constants.dart';
+import '../../../../../core/style.dart';
 import 'login.dart';
 
 class WelcomeViewBody extends StatelessWidget {
@@ -10,31 +11,28 @@ class WelcomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return   const Padding(
-      padding: EdgeInsets.only(top:10.0),
+    return   Padding(
+      padding: const EdgeInsets.only(top:10.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(' Welcome To\n Decorum!',
-          style: TextStyle(
-            color:textWColor,
-            fontWeight: FontWeight.w700,
+          style: AppStyle.textStyle.copyWith(
             fontSize: 40,
-          ),),
-           SizedBox(height: 10,),
-          Text('  Discover a World of Comfort and Style',
-          style: TextStyle(
-            color:textBColor,
-            fontWeight: FontWeight.w700,
+          ),
+          ),
+           const SizedBox(height: 10,),
+           Text('  Discover a World of Comfort and Style',
+          style: AppStyle.textStyle15Black.copyWith(
             fontSize: 20,
           )),
-          SizedBox(height: 30,),
-          StackWidget(),
-           SizedBox(height: 16,),
-          SignUpButton(),
-           SizedBox(height: 8,),
-          LoginRow(),
-          Expanded(
+          const SizedBox(height: 30,),
+          const StackWidget(),
+           const SizedBox(height: 16,),
+          const SignUpButton(),
+           const SizedBox(height: 8,),
+          const LoginRow(),
+          const Expanded(
             child: Image(
               image: AssetImage('assets/images/new.png',
               ),

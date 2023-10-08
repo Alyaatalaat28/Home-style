@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../core/constants.dart';
+import '../../../../../core/style.dart';
 
 class SignUpButton extends StatelessWidget {
   const SignUpButton({super.key});
@@ -19,12 +20,11 @@ class SignUpButton extends StatelessWidget {
         ),
         child: TextButton(
         onPressed: () {  },
-        child: const Text('Sign up',
-        style: TextStyle(
+        child:  Text('Sign up',
+        style: AppStyle.textStyle.copyWith(
           fontSize: 20,
-          fontWeight: FontWeight.w700,
-          color: textWColor,
-        ),),),
+        ),
+        ),),
       ),
     ]);
   }

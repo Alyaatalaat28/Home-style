@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../core/constants.dart';
+import '../../../../../core/style.dart';
 
 class CreateAccountButton extends StatelessWidget {
   const CreateAccountButton({super.key});
@@ -16,12 +17,8 @@ class CreateAccountButton extends StatelessWidget {
       ),
       child: TextButton(
         onPressed: (){},
-         child: const Text('Create Account',
-         style: TextStyle(
-          color:textWColor ,
-          fontSize:15 ,
-          fontWeight:FontWeight.w700 ,
-         ),)),
+         child:  Text('Create Account',
+         style: AppStyle.textStyle15)),
     );
   }
 }

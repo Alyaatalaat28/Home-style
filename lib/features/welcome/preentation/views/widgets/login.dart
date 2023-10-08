@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../core/constants.dart';
+import '../../../../../core/style.dart';
 
 class LoginRow extends StatelessWidget {
   const LoginRow({super.key});
@@ -10,20 +11,14 @@ class LoginRow extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        const Text('Already have an account?',
-        style: TextStyle(
-          fontWeight: FontWeight.w700,
-          fontSize:15 ,
-          color: textWColor,
-        ),),
+         Text('Already have an account?',
+        style: AppStyle.textStyle15,
+         ),
         TextButton(
           onPressed: (){},
-           child: const Text('Login',
-           style: TextStyle(
-          fontWeight: FontWeight.w700,
-          fontSize:15 ,
-          color: buttonColor,
-        ),))
+           child:  Text('Login',
+           style:AppStyle.textStyle15Black
+            ),)
 
       ],
     );
