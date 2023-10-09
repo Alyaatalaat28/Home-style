@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../../../../core/constants.dart';
-import '../../../../../core/style.dart';
+import '../../../../../core/utils/style.dart';
 
 class TermsAndServices extends StatelessWidget {
   const TermsAndServices({super.key});

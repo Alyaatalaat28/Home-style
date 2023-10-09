@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'core/utils/routes.dart';
 import 'features/welcome/preentation/views/welcome.dart';
 
 void main() {
@@ -11,9 +12,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      home:  WelcomeView(),
+      routerConfig: AppRouter.router,
     );
   }
 }

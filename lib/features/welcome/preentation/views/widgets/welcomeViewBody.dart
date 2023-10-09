@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:home_style/features/welcome/preentation/views/widgets/sign_up_button.dart';
 import 'package:home_style/features/welcome/preentation/views/widgets/stack_widget.dart';
-
-import '../../../../../core/constants.dart';
-import '../../../../../core/style.dart';
+import '../../../../../core/utils/style.dart';
 import 'login.dart';
 
 class WelcomeViewBody extends StatelessWidget {

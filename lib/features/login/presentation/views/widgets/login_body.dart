@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/style.dart';
+import '../../../../../core/utils/style.dart';
 import '../../../../../core/widgets/custom_button.dart';
 import '../../../../../core/widgets/custom_text_form_field.dart';
 import '../../../../../core/widgets/divider_row.dart';
@@ -10,8 +10,8 @@ import 'have_account.dart';
 
 class LoginViewBody extends StatelessWidget {
    LoginViewBody({super.key});
-  final TextEditingController nameORUsernameController=TextEditingController();
-   final TextEditingController passwordController=TextEditingController();
+  final TextEditingController nameOrEmailController=TextEditingController();
+   final TextEditingController logPasswordController=TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +45,7 @@ class LoginViewBody extends StatelessWidget {
             height: 5.0,
           ),
            CustomTextFormField(
-            controller:nameORUsernameController , 
+            controller:nameOrEmailController , 
             label: '',),
             const SizedBox(
             height: 25.0,
@@ -55,7 +55,7 @@ class LoginViewBody extends StatelessWidget {
             height: 5.0,
           ),
             CustomTextFormField(
-            controller:passwordController , 
+            controller:logPasswordController , 
             label: '',),
           const SizedBox(
             height: 50.0,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/constants.dart';
+import '../utils/constants.dart';
 
 class MyDivider extends StatelessWidget {
   const MyDivider({super.key});

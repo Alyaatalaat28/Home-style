@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../../../../core/constants.dart';
-import '../style.dart';
+import '../utils/style.dart';
 import 'divider.dart';
 
 class DividerRow extends StatelessWidget {

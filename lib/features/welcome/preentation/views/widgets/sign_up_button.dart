@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-
-import '../../../../../core/constants.dart';
-import '../../../../../core/style.dart';
+import 'package:go_router/go_router.dart';
+import '../../../../../core/utils/constants.dart';
+import '../../../../../core/utils/routes.dart';
+import '../../../../../core/utils/style.dart';
 
 class SignUpButton extends StatelessWidget {
   const SignUpButton({super.key});
@@ -19,7 +20,9 @@ class SignUpButton extends StatelessWidget {
           borderRadius:BorderRadius.circular(20) ,
         ),
         child: TextButton(
-        onPressed: () {  },
+        onPressed: () {
+          GoRouter.of(context).push(AppRouter.kSignUpView);
+          },
         child:  Text('Sign up',
         style: AppStyle.textStyle.copyWith(
           fontSize: 20,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/style.dart';
+import '../../../../../core/utils/style.dart';
 
 class HaveAccount extends StatelessWidget {
   const HaveAccount({super.key});

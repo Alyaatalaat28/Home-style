@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-
-import '../../../../../core/constants.dart';
-import '../../../../../core/style.dart';
+import 'package:go_router/go_router.dart';
+import '../../../../../core/utils/routes.dart';
+import '../../../../../core/utils/style.dart';
 
 class LoginRow extends StatelessWidget {
   const LoginRow({super.key});
@@ -15,7 +15,9 @@ class LoginRow extends StatelessWidget {
         style: AppStyle.textStyle15,
          ),
         TextButton(
-          onPressed: (){},
+          onPressed: (){
+          GoRouter.of(context).push(AppRouter.kSignInView);
+          },
            child:  Text('Login',
            style:AppStyle.textStyle15Black
             ),)

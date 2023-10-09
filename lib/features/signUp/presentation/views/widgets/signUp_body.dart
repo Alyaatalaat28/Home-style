@@ -2,9 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:home_style/features/signUp/presentation/views/widgets/terms.dart';
-
-import '../../../../../core/constants.dart';
-import '../../../../../core/style.dart';
+import '../../../../../core/utils/style.dart';
 import '../../../../../core/widgets/custom_button.dart';
 import '../../../../../core/widgets/custom_text_form_field.dart';
 import '../../../../../core/widgets/divider_row.dart';

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:home_style/core/constants.dart';
-
-import '../../../../../core/style.dart';
+import '../../../../../core/utils/constants.dart';
+import '../../../../../core/utils/style.dart';
 
 class ForgetPassword extends StatelessWidget {
   const ForgetPassword({super.key});

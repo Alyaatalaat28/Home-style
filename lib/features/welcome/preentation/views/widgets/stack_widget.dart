@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:home_style/core/constants.dart';
+import '../../../../../core/utils/constants.dart';
 
 class StackWidget extends StatelessWidget {
   const StackWidget({Key? key})
