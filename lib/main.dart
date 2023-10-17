@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'core/utils/routes.dart';
-import 'features/welcome/preentation/views/welcome.dart';
 
 void main() {
   runApp(const MyApp());

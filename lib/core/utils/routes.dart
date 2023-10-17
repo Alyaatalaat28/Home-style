@@ -1,8 +1,8 @@
 import 'package:go_router/go_router.dart';
 
+import '../../features/home/presentation/views/bottom_nav_bar.dart';
 import '../../features/login/presentation/views/login.dart';
 import '../../features/signUp/presentation/views/signUp.dart';
-import '../../features/welcome/preentation/views/welcome.dart';
 
 abstract class AppRouter{
   static const kSignUpView='/SignUpView';
@@ -11,7 +11,7 @@ abstract class AppRouter{
     routes: [
       GoRoute(
         path: '/',
-        builder: (context, state) => const WelcomeView(),
+        builder: (context, state) =>  CustomBottomNav(),
         ),
        GoRoute(
         path: kSignUpView,
