@@ -1,20 +1,29 @@
  import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 List<BottomNavigationBarItem> bottomNavItems = const [
       BottomNavigationBarItem(
-        icon: Icon(Icons.home),
+        icon: Icon(
+          FontAwesomeIcons.house
+          ),
         label: 'Home',
       ),
       BottomNavigationBarItem(
-        icon: Icon(Icons.search),
+        icon: Icon(
+          FontAwesomeIcons.magnifyingGlass
+          ),
         label: 'Search',
       ),
       BottomNavigationBarItem(
-        icon: Icon(Icons.shopping_cart_outlined),
+        icon: Icon(
+          Icons.shopping_cart,
+          ),
         label: 'Cart',
       ),
       BottomNavigationBarItem(
-        icon: Icon(Icons.person),
+        icon: Icon(
+          FontAwesomeIcons.user
+          ),
         label: 'User',
       ),
     ];
