@@ -9,9 +9,9 @@ class DividerLine extends StatelessWidget {
     return Padding(
       padding:  EdgeInsets.zero,
       child: Container(
-        width:1,
+        width:double.infinity,
         height:1,
-        color:stackColor,
+        color:buttonColor,
       ),
     );
   }

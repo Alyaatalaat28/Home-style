@@ -17,7 +17,7 @@ class CustomBottomNav extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      body:screens[0],
+      body:screens[3],
       bottomNavigationBar: CustomBottomNavBody(),
     );
   }
