@@ -18,9 +18,7 @@ class CustomAppBar extends StatelessWidget {
         ), 
         const SizedBox(width: 3,),
         Text('Scan',
-        style:AppStyle.textStyle15Black.copyWith(
-          fontSize: 12,
-        )) ,      
+        style:AppStyle.textStyle12Black) ,      
        ]
     );
   }

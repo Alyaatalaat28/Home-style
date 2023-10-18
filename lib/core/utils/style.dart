@@ -19,6 +19,10 @@ static TextStyle textStyle15Black= const TextStyle(
               fontSize:15 ,
               fontWeight:FontWeight.w700 ,
             );
-
+static TextStyle textStyle12Black= const TextStyle(
+              color:buttonColor ,
+              fontSize:12 ,
+              fontWeight:FontWeight.w700 ,
+            );
 
 }
