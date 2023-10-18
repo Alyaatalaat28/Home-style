@@ -14,9 +14,9 @@ class WelcomeViewBody extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(' Welcome To\n Decorum!',
+          Text(' Welcome To Decorum!',
           style: AppStyle.textStyle.copyWith(
-            fontSize: 40,
+            fontSize: MediaQuery.of(context).size.width*0.1,
           ),
           ),
            const SizedBox(height: 10,),

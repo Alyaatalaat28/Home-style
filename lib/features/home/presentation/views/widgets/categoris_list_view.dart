@@ -10,10 +10,10 @@ class CategorisListView extends StatelessWidget {
       height:MediaQuery.of(context).size.height*0.4,
       child: ListView.builder(
         shrinkWrap: true,
-        physics: BouncingScrollPhysics(),
+        physics:const BouncingScrollPhysics(),
         scrollDirection: Axis.horizontal,
           itemBuilder:((context, index) =>const Padding(
-            padding:  EdgeInsets.symmetric(horizontal:8.0),
+            padding:  EdgeInsets.symmetric(horizontal:15.0,vertical: 0.8),
             child: CategoriesItem(),
           ) ),
           itemCount: 10,
