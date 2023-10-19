@@ -18,7 +18,10 @@ class CustomBottomNav extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
       body:screens[3],
-      bottomNavigationBar: CustomBottomNavBody(),
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: CustomBottomNavBody(),
+      ),
     );
   }
 }
