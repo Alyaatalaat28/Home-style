@@ -1,6 +1,5 @@
 import 'package:go_router/go_router.dart';
-
-import '../../features/home/presentation/views/bottom_nav_bar.dart';
+import 'package:home_style/features/home/presentation/views/bottom_nav_bar.dart';
 import '../../features/login/presentation/views/login.dart';
 import '../../features/signUp/presentation/views/signUp.dart';
 
