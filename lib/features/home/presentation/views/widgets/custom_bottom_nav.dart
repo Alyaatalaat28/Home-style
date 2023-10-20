@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:home_style/features/home/presentation/manager/cubit/home_cubit.dart';
 
 import '../../../../../core/utils/constants.dart';
 import 'bottom_nav_items.dart';
 // ignore: must_be_immutable
 class CustomBottomNavBody extends StatelessWidget {
    CustomBottomNavBody({Key? key}) : super(key: key);
-  int selectedIndex=0;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -16,11 +16,11 @@ class CustomBottomNavBody extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: bottomNavItems.map((item) {
           var index = bottomNavItems.indexOf(item);
-          var isSelected = index == selectedIndex;
+          var isSelected = index == HomeCubit.get(context).selectedIndex;
           return Expanded(
             child: InkWell(
               onTap: () {
-                // Handle item tap
+                HomeCubit.get(context).changeBottomNavIndex(index);
               },
               child: Container(
                 padding: const EdgeInsets.symmetric(vertical: 8),

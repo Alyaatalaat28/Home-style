@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:home_style/core/utils/routes.dart';
 import '../../../../../core/utils/constants.dart';
 import '../../../../../core/utils/style.dart';
 
@@ -15,7 +17,9 @@ class CreateAccountButton extends StatelessWidget {
         borderRadius: BorderRadius.all(Radius.circular(50)),
       ),
       child: TextButton(
-        onPressed: (){},
+        onPressed: (){
+           GoRouter.of(context).push(AppRouter.kBottomNavView);
+        },
          child:  Text('Create Account',
          style: AppStyle.textStyle15)),
     );

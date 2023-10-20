@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:home_style/core/utils/constants.dart';
 import '../../../../../core/utils/style.dart';
 
 class TermsAndServices extends StatelessWidget {
@@ -9,7 +10,8 @@ class TermsAndServices extends StatelessWidget {
     return  Row(
       children: [
         Checkbox(
-          value: false,
+          activeColor: buttonColor,
+          value: true,
            onChanged: (value){ }),
             Text('I agree with the Terms of Service and Privacy policy',
            maxLines: 2,

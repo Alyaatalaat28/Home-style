@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:home_style/core/utils/routes.dart';
 import '../../../../../core/utils/style.dart';
 import 'create_account_button.dart';
 
@@ -17,7 +19,9 @@ class AnotherOptions extends StatelessWidget {
                Text('Already have an account?',
               style: AppStyle.textStyle15),
           TextButton(
-            onPressed: (){},
+            onPressed: (){
+               GoRouter.of(context).push(AppRouter.kSignInView);
+            },
             child: Text('Login',
           style:AppStyle.textStyle15Black)),
             ]),

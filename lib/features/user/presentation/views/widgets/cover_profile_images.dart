@@ -30,7 +30,7 @@ class ProfileImage extends StatelessWidget {
                       radius: 65.0,
                       backgroundColor: Theme.of(context).scaffoldBackgroundColor,
                       child:const CircleAvatar(
-                        backgroundImage: NetworkImage('https://cdnb.artstation.com/p/assets/images/images/036/259/743/large/brenno-figueiredo-gojo-assinado.jpg?1617163837',),
+                        backgroundImage: AssetImage('assets/images/new.png',),
                         radius: 60.0,
                       ),
                     ),

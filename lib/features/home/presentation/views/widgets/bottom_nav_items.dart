@@ -16,9 +16,9 @@ List<BottomNavigationBarItem> bottomNavItems = const [
       ),
       BottomNavigationBarItem(
         icon: Icon(
-          Icons.shopping_cart,
+          Icons.favorite_border_rounded,
           ),
-        label: 'Cart',
+        label: 'Favorite',
       ),
       BottomNavigationBarItem(
         icon: Icon(

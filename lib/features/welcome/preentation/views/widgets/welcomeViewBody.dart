@@ -16,13 +16,13 @@ class WelcomeViewBody extends StatelessWidget {
         children: [
           Text(' Welcome To Decorum!',
           style: AppStyle.textStyle.copyWith(
-            fontSize: MediaQuery.of(context).size.width*0.1,
+            fontSize: MediaQuery.of(context).size.width*0.08,
           ),
           ),
            const SizedBox(height: 10,),
            Text('  Discover a World of Comfort and Style',
           style: AppStyle.textStyle15Black.copyWith(
-            fontSize: 20,
+            fontSize: MediaQuery.of(context).size.width*0.045,
           )),
           const SizedBox(height: 30,),
           const StackWidget(),

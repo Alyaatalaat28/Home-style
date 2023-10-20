@@ -5,3 +5,6 @@ import 'package:flutter/material.dart';
 sealed class HomeCubtState {}
 
 final class HomeCubtInitial extends HomeCubtState {}
+
+final class ChangeBottomNavIndexState extends HomeCubtState {}
+
