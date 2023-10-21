@@ -17,7 +17,7 @@ class CustomSearchTextField extends StatelessWidget {
             onPressed: () {},
             icon: const Icon(
               FontAwesomeIcons.magnifyingGlass,
-              color:buttonColor ,
+              color: buttonColor,
               size: 22,
             ),
           )),
@@ -26,7 +26,7 @@ class CustomSearchTextField extends StatelessWidget {
 
   OutlineInputBorder buildOutlineInputBorder() {
     return OutlineInputBorder(
-      borderSide:  const BorderSide(
+      borderSide: const BorderSide(
         color: buttonColor,
       ),
       borderRadius: BorderRadius.circular(12.0),

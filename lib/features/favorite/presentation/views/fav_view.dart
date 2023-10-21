@@ -7,16 +7,16 @@ class FavView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       appBar: AppBar(
         elevation: 0.0,
         backgroundColor: Colors.transparent,
-        title:Text('Favorite',
-        style:AppStyle.textStyle15Black.copyWith(
-          fontSize: MediaQuery.of(context).size.width*0.04,
-        )),
+        title: Text('Favorite',
+            style: AppStyle.textStyle15Black.copyWith(
+              fontSize: MediaQuery.of(context).size.width * 0.04,
+            )),
       ),
-      body:const FavViewBody() ,
+      body: const FavViewBody(),
     );
   }
 }

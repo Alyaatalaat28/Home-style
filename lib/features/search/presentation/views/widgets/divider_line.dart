@@ -7,11 +7,11 @@ class DividerLine extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding:  EdgeInsets.zero,
+      padding: EdgeInsets.zero,
       child: Container(
-        width:double.infinity,
-        height:1,
-        color:buttonColor,
+        width: double.infinity,
+        height: 1,
+        color: buttonColor,
       ),
     );
   }

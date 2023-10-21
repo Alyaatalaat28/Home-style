@@ -9,38 +9,44 @@ class WelcomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return   Padding(
-      padding: const EdgeInsets.only(top:10.0),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(' Welcome To Decorum!',
+    return Padding(
+      padding: const EdgeInsets.only(top: 10.0),
+      child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+        Text(
+          ' Welcome To Decorum!',
           style: AppStyle.textStyle.copyWith(
-            fontSize: MediaQuery.of(context).size.width*0.08,
+            fontSize: MediaQuery.of(context).size.width * 0.08,
           ),
-          ),
-           const SizedBox(height: 10,),
-           Text('  Discover a World of Comfort and Style',
-          style: AppStyle.textStyle15Black.copyWith(
-            fontSize: MediaQuery.of(context).size.width*0.045,
-          )),
-          const SizedBox(height: 30,),
-          const StackWidget(),
-           const SizedBox(height: 16,),
-          const SignUpButton(),
-           const SizedBox(height: 8,),
-          const LoginRow(),
-          const Expanded(
-            child: Image(
-              image: AssetImage('assets/images/new.png',
-              ),
-              fit: BoxFit.fill, 
-              width: double.infinity,
+        ),
+        const SizedBox(
+          height: 10,
+        ),
+        Text('  Discover a World of Comfort and Style',
+            style: AppStyle.textStyle15Black.copyWith(
+              fontSize: MediaQuery.of(context).size.width * 0.045,
+            )),
+        const SizedBox(
+          height: 30,
+        ),
+        const StackWidget(),
+        const SizedBox(
+          height: 16,
+        ),
+        const SignUpButton(),
+        const SizedBox(
+          height: 8,
+        ),
+        const LoginRow(),
+        const Expanded(
+          child: Image(
+            image: AssetImage(
+              'assets/images/new.png',
             ),
+            fit: BoxFit.fill,
+            width: double.infinity,
           ),
-          
-        ]
-      ),
+        ),
+      ]),
     );
   }
 }

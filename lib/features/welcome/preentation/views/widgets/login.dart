@@ -11,17 +11,16 @@ class LoginRow extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-         Text('Already have an account?',
-        style: AppStyle.textStyle15,
-         ),
+        Text(
+          'Already have an account?',
+          style: AppStyle.textStyle15,
+        ),
         TextButton(
-          onPressed: (){
-          GoRouter.of(context).push(AppRouter.kSignInView);
+          onPressed: () {
+            GoRouter.of(context).push(AppRouter.kSignInView);
           },
-           child:  Text('Login',
-           style:AppStyle.textStyle15Black
-            ),)
-
+          child: Text('Login', style: AppStyle.textStyle15Black),
+        )
       ],
     );
   }

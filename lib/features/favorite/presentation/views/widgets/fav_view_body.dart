@@ -50,8 +50,8 @@ class _FavViewBodyState extends State<FavViewBody>
             Text(
               'Your Favorite is empty',
               style: AppStyle.textStyle15Black.copyWith(
-          fontSize: MediaQuery.of(context).size.width*0.04,
-        ),
+                fontSize: MediaQuery.of(context).size.width * 0.04,
+              ),
             ),
           ],
         ),

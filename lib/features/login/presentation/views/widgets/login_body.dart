@@ -13,70 +13,79 @@ import 'forget_password.dart';
 import 'have_account.dart';
 
 class LoginViewBody extends StatelessWidget {
-   LoginViewBody({super.key});
-  final TextEditingController nameOrEmailController=TextEditingController();
-   final TextEditingController logPasswordController=TextEditingController();
+  LoginViewBody({super.key});
+  final TextEditingController nameOrEmailController = TextEditingController();
+  final TextEditingController logPasswordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
-    return  Padding(
+    return Padding(
       padding: const EdgeInsets.all(40.0),
       child: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Text('Log in to Decorum!',
-            style: AppStyle.textStyle,),
+            Text(
+              'Log in to Decorum!',
+              style: AppStyle.textStyle,
+            ),
             const SizedBox(
               height: 15.0,
             ),
-            const CustomButton(text: 'Log in with Google',),
-             const SizedBox(
+            const CustomButton(
+              text: 'Log in with Google',
+            ),
+            const SizedBox(
               height: 15.0,
             ),
-            const DividerRow(text: 'Or log in with Email',),
-             const SizedBox(
+            const DividerRow(
+              text: 'Or log in with Email',
+            ),
+            const SizedBox(
               height: 25.0,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Text('Username or Email',
-                style: AppStyle.textStyle15Black,),
+                Text(
+                  'Username or Email',
+                  style: AppStyle.textStyle15Black,
+                ),
               ],
             ),
-             const SizedBox(
+            const SizedBox(
               height: 5.0,
             ),
-             CustomTextFormField(
-              controller:nameOrEmailController , 
-              label: '',),
-              const SizedBox(
+            CustomTextFormField(
+              controller: nameOrEmailController,
+              label: '',
+            ),
+            const SizedBox(
               height: 25.0,
             ),
-              const ForgetPassword(),
-              const SizedBox(
+            const ForgetPassword(),
+            const SizedBox(
               height: 5.0,
             ),
-              CustomTextFormField(
-              controller:logPasswordController , 
-              label: '',),
-              const SizedBox(
+            CustomTextFormField(
+              controller: logPasswordController,
+              label: '',
+            ),
+            const SizedBox(
               height: 20.0,
             ),
-             CustomTextButton(
-              color: buttonColor, 
+            CustomTextButton(
+              color: buttonColor,
               text: 'Login',
-              onPressed: (){
+              onPressed: () {
                 GoRouter.of(context).push(AppRouter.kBottomNavView);
               },
-              ),
+            ),
             const SizedBox(
               height: 50.0,
             ),
             const HaveAccount(),
-            
           ],
         ),
       ),

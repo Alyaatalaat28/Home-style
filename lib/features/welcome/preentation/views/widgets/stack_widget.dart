@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../../../core/utils/constants.dart';
 
 class StackWidget extends StatelessWidget {
-  const StackWidget({Key? key})
-      : super(key: key);
-
+  const StackWidget({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -33,8 +31,8 @@ class StackWidget extends StatelessWidget {
                         decoration: const BoxDecoration(
                           color: stackColor,
                           borderRadius: BorderRadius.only(
-                            bottomRight: Radius.circular(91.5 ),
-                            topRight: Radius.circular(91.5 ),
+                            bottomRight: Radius.circular(91.5),
+                            topRight: Radius.circular(91.5),
                             bottomLeft: Radius.circular(0.0),
                             topLeft: Radius.circular(0.0),
                           ),
@@ -54,8 +52,8 @@ class StackWidget extends StatelessWidget {
                         decoration: const BoxDecoration(
                           color: stackColor,
                           borderRadius: BorderRadius.only(
-                            bottomRight: Radius.circular(91.5 ),
-                            topRight: Radius.circular(91.5 ),
+                            bottomRight: Radius.circular(91.5),
+                            topRight: Radius.circular(91.5),
                             bottomLeft: Radius.circular(0.0),
                             topLeft: Radius.circular(0.0),
                           ),
@@ -85,8 +83,8 @@ class StackWidget extends StatelessWidget {
                           decoration: const BoxDecoration(
                             color: stackColor,
                             borderRadius: BorderRadius.only(
-                              bottomRight: Radius.circular(91.5 ),
-                              topRight: Radius.circular(91.5 ),
+                              bottomRight: Radius.circular(91.5),
+                              topRight: Radius.circular(91.5),
                               bottomLeft: Radius.circular(0.0),
                               topLeft: Radius.circular(0.0),
                             ),
@@ -106,8 +104,8 @@ class StackWidget extends StatelessWidget {
                           decoration: const BoxDecoration(
                             color: stackColor,
                             borderRadius: BorderRadius.only(
-                              bottomRight: Radius.circular(91.5 ),
-                              topRight: Radius.circular(91.5 ),
+                              bottomRight: Radius.circular(91.5),
+                              topRight: Radius.circular(91.5),
                               bottomLeft: Radius.circular(0.0),
                               topLeft: Radius.circular(0.0),
                             ),
@@ -125,4 +123,3 @@ class StackWidget extends StatelessWidget {
     );
   }
 }
-

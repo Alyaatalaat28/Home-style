@@ -8,17 +8,16 @@ class SearchViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const SafeArea(
-      child:  Padding(
-        padding: EdgeInsets.symmetric(horizontal: 30.0,vertical:20.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
+      child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 20.0),
+          child:
+              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             CustomSearchTextField(),
             SizedBox(
               height: 16.0,
             ),
             DividerLine(),
-            ])),
+          ])),
     );
   }
 }

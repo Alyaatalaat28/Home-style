@@ -4,35 +4,39 @@ import '../../../../../core/utils/style.dart';
 import 'custom_app_bar.dart';
 import 'categoris_list_view.dart';
 
-
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return  SafeArea(
+    return SafeArea(
       child: Padding(
-        padding:  const EdgeInsets.symmetric(horizontal:15.0,vertical: 40),
-        child:  SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children:[
-              const CustomAppBar(),
-              const SizedBox(height: 40,),
-              Text('Browse by Categories',
+        padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 40),
+        child: SingleChildScrollView(
+          child:
+              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            const CustomAppBar(),
+            const SizedBox(
+              height: 40,
+            ),
+            Text(
+              'Browse by Categories',
               style: AppStyle.textStyle15Black.copyWith(
-                fontSize:MediaQuery.of(context).size.width*0.04,
-
-              ),),
-              const CategorisListView(),
-               const SizedBox(height: 10,),
-              Text('Recommended for You',
+                fontSize: MediaQuery.of(context).size.width * 0.04,
+              ),
+            ),
+            const CategorisListView(),
+            const SizedBox(
+              height: 10,
+            ),
+            Text(
+              'Recommended for You',
               style: AppStyle.textStyle15Black.copyWith(
-                fontSize:MediaQuery.of(context).size.width*0.04,
-              ),),
-              const ProductGridView(),
-            ]
-          ),
+                fontSize: MediaQuery.of(context).size.width * 0.04,
+              ),
+            ),
+            const ProductGridView(),
+          ]),
         ),
       ),
     );

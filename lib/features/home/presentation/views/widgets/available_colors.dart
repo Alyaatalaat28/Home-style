@@ -5,39 +5,49 @@ class AvailableColor extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Row(
+    return Row(
       children: [
         Container(
           width: 24,
           height: 24,
-          color:const Color(0xff7BA275),
+          color: const Color(0xff7BA275),
         ),
-        const SizedBox(width: 5,),
-         Container(
+        const SizedBox(
+          width: 5,
+        ),
+        Container(
           width: 24,
           height: 24,
-          color:Colors.white,
+          color: Colors.white,
         ),
-        const SizedBox(width: 5,),
-         Container(
+        const SizedBox(
+          width: 5,
+        ),
+        Container(
           width: 24,
           height: 24,
-          color:const Color(0xff171717),
+          color: const Color(0xff171717),
         ),
-        const SizedBox(width: 5,),
-         Container(
+        const SizedBox(
+          width: 5,
+        ),
+        Container(
           width: 24,
           height: 24,
           color: Colors.red,
         ),
-          const SizedBox(width: 5,),
-         Container(
+        const SizedBox(
+          width: 5,
+        ),
+        Container(
           width: 24,
           height: 24,
           color: const Color.fromARGB(255, 182, 165, 16),
         ),
-         const SizedBox(width: 5,),
-         Container(
+        const SizedBox(
+          width: 5,
+        ),
+        Container(
           width: 24,
           height: 24,
           color: Colors.brown,

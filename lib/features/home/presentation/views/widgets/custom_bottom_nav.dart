@@ -3,14 +3,15 @@ import 'package:home_style/features/home/presentation/manager/cubit/home_cubit.d
 
 import '../../../../../core/utils/constants.dart';
 import 'bottom_nav_items.dart';
+
 // ignore: must_be_immutable
 class CustomBottomNavBody extends StatelessWidget {
-   CustomBottomNavBody({Key? key}) : super(key: key);
+  CustomBottomNavBody({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
-        color:textWColor,
+        color: textWColor,
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -25,8 +26,8 @@ class CustomBottomNavBody extends StatelessWidget {
               child: Container(
                 padding: const EdgeInsets.symmetric(vertical: 8),
                 decoration: BoxDecoration(
-                color: isSelected ? scafColor : Colors.transparent,
-                borderRadius: BorderRadius.circular(20),
+                  color: isSelected ? scafColor : Colors.transparent,
+                  borderRadius: BorderRadius.circular(20),
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -48,7 +49,8 @@ class CustomBottomNavBody extends StatelessWidget {
       ),
     );
   }
-   Widget _buildIcon(Widget icon, bool isSelected) {
+
+  Widget _buildIcon(Widget icon, bool isSelected) {
     if (icon is Icon) {
       return Icon(
         icon.icon,

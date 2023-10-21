@@ -9,25 +9,25 @@ class SignUpButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Container(
-        width:284 ,
-        height:59 ,
+    return Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+      Container(
+        width: 284,
+        height: 59,
         decoration: BoxDecoration(
-          color:buttonColor ,
-          borderRadius:BorderRadius.circular(20) ,
+          color: buttonColor,
+          borderRadius: BorderRadius.circular(20),
         ),
         child: TextButton(
-        onPressed: () {
-          GoRouter.of(context).push(AppRouter.kSignUpView);
+          onPressed: () {
+            GoRouter.of(context).push(AppRouter.kSignUpView);
           },
-        child:  Text('Sign up',
-        style: AppStyle.textStyle.copyWith(
-          fontSize: 20,
+          child: Text(
+            'Sign up',
+            style: AppStyle.textStyle.copyWith(
+              fontSize: 20,
+            ),
+          ),
         ),
-        ),),
       ),
     ]);
   }

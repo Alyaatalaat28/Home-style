@@ -7,19 +7,22 @@ class ForgetPassword extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Row(
+    return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-          Text('Password',
-          style: AppStyle.textStyle15Black,),
-          TextButton(
-            onPressed: (){},
-             child: Text('Forgot?',
-             style: AppStyle.textStyle15Black.copyWith(
-              color: buttonColor.withOpacity(0.5),
-             ),
-             ))
-             ],
-           );
+      children: [
+        Text(
+          'Password',
+          style: AppStyle.textStyle15Black,
+        ),
+        TextButton(
+            onPressed: () {},
+            child: Text(
+              'Forgot?',
+              style: AppStyle.textStyle15Black.copyWith(
+                color: buttonColor.withOpacity(0.5),
+              ),
+            ))
+      ],
+    );
   }
 }

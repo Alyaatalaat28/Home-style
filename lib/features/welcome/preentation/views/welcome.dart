@@ -3,15 +3,14 @@ import 'package:home_style/features/welcome/preentation/views/widgets/welcomeVie
 
 import '../../../../core/utils/constants.dart';
 
-
 class WelcomeView extends StatelessWidget {
   const WelcomeView({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor:scafColor,
-      body:WelcomeViewBody() ,
+      backgroundColor: scafColor,
+      body: WelcomeViewBody(),
     );
   }
 }

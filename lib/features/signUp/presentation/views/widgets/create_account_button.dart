@@ -9,19 +9,18 @@ class CreateAccountButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Container(
-      width:180,
-      height:45 ,
+    return Container(
+      width: 180,
+      height: 45,
       decoration: const BoxDecoration(
-        color:buttonColor ,
+        color: buttonColor,
         borderRadius: BorderRadius.all(Radius.circular(50)),
       ),
       child: TextButton(
-        onPressed: (){
-           GoRouter.of(context).push(AppRouter.kBottomNavView);
-        },
-         child:  Text('Create Account',
-         style: AppStyle.textStyle15)),
+          onPressed: () {
+            GoRouter.of(context).push(AppRouter.kBottomNavView);
+          },
+          child: Text('Create Account', style: AppStyle.textStyle15)),
     );
   }
 }

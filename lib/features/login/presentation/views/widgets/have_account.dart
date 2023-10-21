@@ -9,16 +9,17 @@ class HaveAccount extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Column(
+    return Column(
       children: [
-        Text('Don’t have an account?',
-        style: AppStyle.textStyle15,),
+        Text(
+          'Don’t have an account?',
+          style: AppStyle.textStyle15,
+        ),
         TextButton(
-          onPressed: (){
-             GoRouter.of(context).push(AppRouter.kSignUpView);
-          }, 
-          child: Text('Sign up',
-          style: AppStyle.textStyle15Black))
+            onPressed: () {
+              GoRouter.of(context).push(AppRouter.kSignUpView);
+            },
+            child: Text('Sign up', style: AppStyle.textStyle15Black))
       ],
     );
   }

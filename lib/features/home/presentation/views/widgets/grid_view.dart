@@ -10,7 +10,8 @@ class ProductGridView extends StatelessWidget {
       builder: (BuildContext context, BoxConstraints constraints) {
         const double maxWidth = 600;
         final int crossAxisCount = constraints.maxWidth < maxWidth ? 2 : 4;
-        final double crossAxisSpacing = constraints.maxWidth < maxWidth ? 10 : 12;
+        final double crossAxisSpacing =
+            constraints.maxWidth < maxWidth ? 10 : 12;
 
         return GridView.builder(
           shrinkWrap: true,

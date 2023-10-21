@@ -7,17 +7,14 @@ class TermsAndServices extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Row(
+    return Row(
       children: [
-        Checkbox(
-          activeColor: buttonColor,
-          value: true,
-           onChanged: (value){ }),
-            Text('I agree with the Terms of Service and Privacy policy',
-           maxLines: 2,
-           style: AppStyle.textStyle15.copyWith(
-            fontSize: 12,
-           ))
+        Checkbox(activeColor: buttonColor, value: true, onChanged: (value) {}),
+        Text('I agree with the Terms of Service and Privacy policy',
+            maxLines: 2,
+            style: AppStyle.textStyle15.copyWith(
+              fontSize: 12,
+            ))
       ],
     );
   }

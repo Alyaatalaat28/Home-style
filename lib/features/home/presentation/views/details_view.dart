@@ -9,7 +9,7 @@ class DetailsView extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       backgroundColor: stackColor,
-      body:DetailsViewBody(),
+      body: DetailsViewBody(),
     );
   }
 }

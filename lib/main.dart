@@ -12,29 +12,26 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return  MultiBlocProvider(
+    return MultiBlocProvider(
       providers: [
         BlocProvider(
           create: (context) => HomeCubit(),
         ),
         BlocProvider(
-          create: (context) =>LoginCubit(),
+          create: (context) => LoginCubit(),
         ),
         BlocProvider(
-          create: (context) =>SignUpCubit(),
+          create: (context) => SignUpCubit(),
         ),
-      
       ],
-    child: MaterialApp.router(
+      child: MaterialApp.router(
         debugShowCheckedModeBanner: false,
         routerConfig: AppRouter.router,
       ),
     );
   }
 }
-

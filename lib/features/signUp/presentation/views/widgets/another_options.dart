@@ -9,23 +9,17 @@ class AnotherOptions extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-          children:[
-          const CreateAccountButton(),
-          const SizedBox(height:5),
-          Row(
-            mainAxisAlignment:MainAxisAlignment.center,
-            children: [
-               Text('Already have an account?',
-              style: AppStyle.textStyle15),
-          TextButton(
-            onPressed: (){
-               GoRouter.of(context).push(AppRouter.kSignInView);
+    return Column(children: [
+      const CreateAccountButton(),
+      const SizedBox(height: 5),
+      Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+        Text('Already have an account?', style: AppStyle.textStyle15),
+        TextButton(
+            onPressed: () {
+              GoRouter.of(context).push(AppRouter.kSignInView);
             },
-            child: Text('Login',
-          style:AppStyle.textStyle15Black)),
-            ]),
-          ]
-    );
+            child: Text('Login', style: AppStyle.textStyle15Black)),
+      ]),
+    ]);
   }
 }

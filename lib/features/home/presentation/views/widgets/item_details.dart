@@ -13,39 +13,40 @@ class ItemDetail extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text('chair'.toUpperCase(),
-        style: AppStyle.textStyle12Black.copyWith(
-          color: buttonColor.withOpacity(0.5),
-          fontSize:MediaQuery.of(context).size.width*0.035,
-        )),
-        const SizedBox(height:5),
-        Text('Green\nArmchair ',
-        style: AppStyle.textStyle15Black.copyWith(
-          fontSize:MediaQuery.of(context).size.width*0.04,
+            style: AppStyle.textStyle12Black.copyWith(
+              color: buttonColor.withOpacity(0.5),
+              fontSize: MediaQuery.of(context).size.width * 0.035,
+            )),
+        const SizedBox(height: 5),
+        Text(
+          'Green\nArmchair ',
+          style: AppStyle.textStyle15Black.copyWith(
+            fontSize: MediaQuery.of(context).size.width * 0.04,
+          ),
         ),
-        ),
-        const SizedBox(height:20),
+        const SizedBox(height: 20),
         Text('From',
-        style: AppStyle.textStyle12Black.copyWith(
-          color: buttonColor.withOpacity(0.5),
-          fontSize:MediaQuery.of(context).size.width*0.035,
-        )),
-        const SizedBox(height:5),
-         Text('\$289.99',
-        style: AppStyle.textStyle15Black.copyWith(
-          fontSize:MediaQuery.of(context).size.width*0.04,
+            style: AppStyle.textStyle12Black.copyWith(
+              color: buttonColor.withOpacity(0.5),
+              fontSize: MediaQuery.of(context).size.width * 0.035,
+            )),
+        const SizedBox(height: 5),
+        Text(
+          '\$289.99',
+          style: AppStyle.textStyle15Black.copyWith(
+            fontSize: MediaQuery.of(context).size.width * 0.04,
+          ),
         ),
-        ),
-       const SizedBox(height:20),
-      Text('Available Colors',
-        style: AppStyle.textStyle12Black.copyWith(
-          color: buttonColor.withOpacity(0.5),
-          fontSize:MediaQuery.of(context).size.width*0.035,
-        )),
-         const SizedBox(height:5),
-         const AvailableColor(),
-         const SizedBox(height:15),
-         const DetailsCard(),
-
+        const SizedBox(height: 20),
+        Text('Available Colors',
+            style: AppStyle.textStyle12Black.copyWith(
+              color: buttonColor.withOpacity(0.5),
+              fontSize: MediaQuery.of(context).size.width * 0.035,
+            )),
+        const SizedBox(height: 5),
+        const AvailableColor(),
+        const SizedBox(height: 15),
+        const DetailsCard(),
       ],
     );
   }
