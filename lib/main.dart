@@ -13,7 +13,7 @@ void main() {
   setUpServiceLocator();
   Bloc.observer = MyBlocObserver();
   runApp(const MyApp());
-  
+
 }
 
 class MyApp extends StatelessWidget {
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(
-          create: (context) => HomeCubit(homeRepo: getIt.get<HomeRepoImpl>()),
+          create: (context) => HomeCubit(homeRepo: getIt.get<HomeRepoImpl>())..fetchCategoris()..fetchProducts(),
         ),
         BlocProvider(
           create: (context) => LoginCubit(),

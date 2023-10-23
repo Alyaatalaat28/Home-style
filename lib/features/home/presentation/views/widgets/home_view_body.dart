@@ -11,13 +11,15 @@ class HomeViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 40),
+        padding: const EdgeInsets.all( 8.0),
         child: SingleChildScrollView(
           child:
-              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start, 
+                children: [
             const CustomAppBar(),
             const SizedBox(
-              height: 40,
+              height: 30,
             ),
             Text(
               'Browse by Categories',

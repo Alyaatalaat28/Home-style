@@ -12,9 +12,9 @@ List<BottomNavigationBarItem> bottomNavItems = const [
   ),
   BottomNavigationBarItem(
     icon: Icon(
-      Icons.favorite_border_rounded,
+      Icons.shopping_cart_outlined,
     ),
-    label: 'Favorite',
+    label: 'Cart',
   ),
   BottomNavigationBarItem(
     icon: Icon(FontAwesomeIcons.user),

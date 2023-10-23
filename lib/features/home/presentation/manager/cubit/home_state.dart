@@ -13,7 +13,7 @@ final class ChangeBottomNavIndexState extends HomeCubtState {}
 final class  FetchCategorisItemLoadingState extends HomeCubtState {}
 
 final class  FetchCategorisItemSuccessState extends HomeCubtState {
-  final Categoris categoris;
+  final List<Categoris> categoris;
 
   FetchCategorisItemSuccessState({required this.categoris});
 
@@ -31,7 +31,7 @@ final String error;
 final class  FetchProductsItemLoadingState extends HomeCubtState {}
 
 final class  FetchProductsItemSuccessState extends HomeCubtState {
-  final Products products;
+  final List<Products> products;
 
   FetchProductsItemSuccessState({required this.products});
 

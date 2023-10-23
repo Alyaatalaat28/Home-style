@@ -6,7 +6,7 @@ import '../models/products/products.dart';
 
 abstract class HomeRepo{
 
-  Future<Either<Failure,Categoris>> fetchCategorisItems();
-  Future<Either<Failure,Products>> fetchProductItems();
+  Future<Either<Failure,List<Categoris>>> fetchCategorisItems();
+  Future<Either<Failure,List<Products>>> fetchProductItems();
 
 }

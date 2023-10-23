@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:home_style/core/utils/style.dart';
 
-class FavViewBody extends StatefulWidget {
-  const FavViewBody({Key? key}) : super(key: key);
+class CartViewBody extends StatefulWidget {
+  const CartViewBody({Key? key}) : super(key: key);
 
   @override
-  State<FavViewBody> createState() => _FavViewBodyState();
+  State<CartViewBody> createState() => _FavViewBodyState();
 }
 
-class _FavViewBodyState extends State<FavViewBody>
+class _FavViewBodyState extends State<CartViewBody>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _animation;
@@ -19,8 +19,8 @@ class _FavViewBodyState extends State<FavViewBody>
 
     _controller = AnimationController(
       vsync: this,
-      duration: const Duration(seconds: 15),
-    )..repeat();
+      duration: const Duration(seconds: 2),
+    )..repeat(reverse: true);
 
     _animation = Tween<double>(
       begin: 100.0,
@@ -42,15 +42,18 @@ class _FavViewBodyState extends State<FavViewBody>
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(
-              Icons.favorite_border_rounded,
-              size: 50.0,
+            Icon(
+              Icons.shopping_cart_checkout_outlined,
+              size: _animation.value,
             ),
             const SizedBox(height: 10),
-            Text(
-              'Your Favorite is empty',
-              style: AppStyle.textStyle15Black.copyWith(
-                fontSize: MediaQuery.of(context).size.width * 0.04,
+            Opacity(
+              opacity: 1 - _animation.value / 200.0,
+              child: Text(
+                'Your Cart is empty',
+                style: AppStyle.textStyle15Black.copyWith(
+                  fontSize: MediaQuery.of(context).size.width * 0.045,
+                ),
               ),
             ),
           ],

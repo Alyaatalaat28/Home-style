@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:home_style/features/favorite/presentation/views/fav_view.dart';
+import 'package:home_style/features/cart/presentation/views/cart_view.dart';
+import 'package:home_style/features/home/data/models/products/products.dart';
 import 'package:home_style/features/home/data/repos/home_repo.dart';
 import 'package:home_style/features/search/presentation/views/search_view.dart';
 import 'package:home_style/features/user/presentation/views/user_view.dart';
@@ -15,7 +16,7 @@ class HomeCubit extends Cubit<HomeCubtState> {
   List<Widget> screens = const [
     HomeView(),
     SearchView(),
-    FavView(),
+    CartView(),
     UserView()
   ];
 
@@ -44,5 +45,16 @@ Future<void>fetchProducts()async{
     (products)=>emit(FetchProductsItemSuccessState(products: products))
   );
 }
+
+// Cart
+
+List<Products> cartList=[];
+
+void addTocart(Products product){
+  cartList.add(product);
+
+}
+
+
 
 }

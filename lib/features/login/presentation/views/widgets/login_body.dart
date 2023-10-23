@@ -20,7 +20,7 @@ class LoginViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(40.0),
+      padding: const EdgeInsets.symmetric(horizontal:40.0,vertical: 80),
       child: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -62,7 +62,7 @@ class LoginViewBody extends StatelessWidget {
               label: '',
             ),
             const SizedBox(
-              height: 25.0,
+              height: 10.0,
             ),
             const ForgetPassword(),
             const SizedBox(

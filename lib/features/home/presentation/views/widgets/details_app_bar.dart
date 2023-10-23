@@ -6,18 +6,21 @@ class DetailsAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        IconButton(
-            onPressed: () {
-              Navigator.pop(context);
-            },
-            icon: const Icon(
-              FontAwesomeIcons.arrowLeftLong,
-            )),
-        const Spacer(),
-        const Icon(Icons.shopping_bag_outlined),
-      ],
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          IconButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              icon: const Icon(
+                FontAwesomeIcons.arrowLeftLong,
+              )),
+          const Icon(Icons.shopping_bag_outlined),
+        ],
+      ),
     );
   }
 }

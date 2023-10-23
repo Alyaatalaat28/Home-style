@@ -10,7 +10,7 @@ class MyDivider extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
-        width: 82,
+        width: MediaQuery.sizeOf(context).width*0.1,
         height: 1,
         color: buttonColor,
       ),

@@ -15,11 +15,13 @@ class HomeRepoImpl implements HomeRepo{
  //categoris
 
   @override
-  Future<Either<Failure, Categoris>> fetchCategorisItems()async {
+  Future<Either<Failure, List<Categoris>>> fetchCategorisItems()async {
+    List<Categoris>categorisList=[];
     try{
-      var data=await apiService.get(endPoint: 'categories');
-      Categoris categories=Categoris.fromMap(data);
-         return right(categories);
+      var response=await apiService.get(endPoint: 'categories');
+     categorisList=response .map((data) =>Categoris.fromMap(data)).toList();
+      
+         return right(categorisList);
       }
      
     catch(e){
@@ -34,11 +36,13 @@ class HomeRepoImpl implements HomeRepo{
  //products
 
   @override
-  Future<Either<Failure, Products>> fetchProductItems()async {
+  Future<Either<Failure, List<Products>>> fetchProductItems()async {
+    List<Products>productsList=[];
     try{
-      var proData=await apiService.get(endPoint: 'categories');
-      Products products=Products.fromJson(proData);
-         return right(products);
+      var response=await apiService.get(endPoint: 'products');
+          productsList=response.map((data)=>Products.fromJson(data)).toList();
+
+         return right(productsList);
       }
      
     catch(e){

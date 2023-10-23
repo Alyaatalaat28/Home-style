@@ -1,11 +1,14 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:home_style/core/utils/style.dart';
 
 import '../../../../../core/utils/constants.dart';
 
 class CategoriesItem extends StatelessWidget {
-  const CategoriesItem({super.key});
-
+  const CategoriesItem({super.key,required this.title,required this.numOfProducts,required this.image});
+   final String title;
+   final int numOfProducts;
+   final String image;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -30,19 +33,19 @@ class CategoriesItem extends StatelessWidget {
               ),
             ),
           ),
-          const Positioned(
+           Positioned(
             left: 0,
             top: 0,
             child: Align(
               child: SizedBox(
                 width: 205,
                 height: 178,
-                child: Image(
-                  image: AssetImage('assets/images/Imput.png'),
+                child:CachedNetworkImage(
+                  imageUrl: image,
+                  errorWidget: (context,url,error)=> const Icon( Icons.error),), 
                 ),
               ),
             ),
-          ),
           Positioned(
             left: 67.5,
             top: 174,
@@ -53,14 +56,14 @@ class CategoriesItem extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(
-                    'Armchair',
-                    style: AppStyle.textStyle12Black,
+                    title,
+                    style: AppStyle.textStyle15Black,
                   ),
                   const SizedBox(
                     height: 5,
                   ),
-                  Text("100+Product",
-                      style: AppStyle.textStyle12Black.copyWith(
+                  Text('$numOfProducts',
+                      style: AppStyle.textStyle15Black.copyWith(
                         color: buttonColor.withOpacity(0.6),
                       )),
                 ],
