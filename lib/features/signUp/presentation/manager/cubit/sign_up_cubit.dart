@@ -11,6 +11,8 @@ part 'sign_up_state.dart';
 class SignUpCubit extends Cubit<SignUpState> {
   SignUpCubit() : super(SignUpInitial());
 
+ static SignUpCubit get(context)=>BlocProvider.of(context);
+
  //create user
   void craeteUser({
     required String name,
@@ -76,14 +78,14 @@ Future<UserCredential?> signUpWithGoogle()async{
     );
     return await FirebaseAuth.instance.signInWithCredential(credential).
     then((value) {
-          emit(GoogleUserSuccessState());
+          emit(GoogleUserSignUpSuccessState());
           return null;
     });
   }catch(error){
     if (kDebugMode) {
       print(error.toString());
     }
-    emit(GoogleUserErrorState());
+    emit(GoogleUserSignUpErrorState());
     return null;
   }
 }

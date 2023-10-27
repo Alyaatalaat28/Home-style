@@ -14,3 +14,7 @@ class LoginLoadingState extends LoginState{}
 class LoginSuccessState extends LoginState{}
 
 class LoginErrorState extends LoginState{}
+
+class GoogleUserSignInSuccessState extends LoginState{}
+
+class  GoogleUserSignInErrorState extends LoginState{}

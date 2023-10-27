@@ -21,7 +21,7 @@ class CreateUserSuccessState extends SignUpState{
 class CreateUserErrorState extends SignUpState{
 }
 
-class GoogleUserSuccessState extends SignUpState{
+class GoogleUserSignUpSuccessState extends SignUpState{
 }
-class GoogleUserErrorState extends SignUpState{
+class GoogleUserSignUpErrorState extends SignUpState{
 }
