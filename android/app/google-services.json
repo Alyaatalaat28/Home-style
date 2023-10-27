@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1095783861496",
+    "project_id": "decorum-e2f84",
+    "storage_bucket": "decorum-e2f84.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095783861496:android:2ed21239d04b262dc8bf0d",
+        "android_client_info": {
+          "package_name": "com.example.home_style"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1095783861496-5kk76nkq8jajtj5i7gbslvj206bqnnjl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.home_style",
+            "certificate_hash": "f3caf4ae3b975679203e86fdac6b607f0d1c3dc0"
+          }
+        },
+        {
+          "client_id": "1095783861496-h5u385k7jm5kh2pek8pg6mus26ipugvp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlyeugJTtVMlzVI7w9R2CG1M-dbgV4rEo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1095783861496-h5u385k7jm5kh2pek8pg6mus26ipugvp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
