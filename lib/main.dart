@@ -1,3 +1,4 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:home_style/core/utils/bloc_observer.dart';
@@ -8,8 +9,10 @@ import 'package:home_style/features/login/presentation/manager/cubit/login_cubit
 import 'package:home_style/features/signUp/presentation/manager/cubit/sign_up_cubit.dart';
 import 'core/utils/routes.dart';
 
-void main() {
-
+void main()async {
+  
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   setUpServiceLocator();
   Bloc.observer = MyBlocObserver();
   runApp(const MyApp());

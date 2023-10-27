@@ -20,3 +20,8 @@ class CreateUserSuccessState extends SignUpState{
 }
 class CreateUserErrorState extends SignUpState{
 }
+
+class GoogleUserSuccessState extends SignUpState{
+}
+class GoogleUserErrorState extends SignUpState{
+}
