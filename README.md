@@ -24,7 +24,6 @@ Flutter furniture app called Decorum. It's built using the MVVM architecture and
 
 ![Screenshot_20231028-152617](https://github.com/Alyaatalaat28/Decorum/assets/78979377/ec2406c7-ed64-4587-8b7f-7cd08120c7ce)
 
-![Screenshot_20231028-152617](https://github.com/Alyaatalaat28/Decorum/assets/78979377/6ac663cf-a9ef-4833-b89b-5ef80ce3891a)
 
 ![Screenshot_20231028-152535](https://github.com/Alyaatalaat28/Decorum/assets/78979377/c3d6673c-44e5-49b2-95da-5144a6001acf)
 
