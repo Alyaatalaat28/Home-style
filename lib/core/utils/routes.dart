@@ -5,13 +5,14 @@ import '../../features/login/presentation/views/login.dart';
 import '../../features/signUp/presentation/views/signUp.dart';
 
 abstract class AppRouter {
+  static const KWelcomeView = '/';
   static const kSignUpView = '/SignUpView';
   static const kSignInView = '/SignInView';
   static const kBottomNavView = '/CustomBottomNav';
 
   static final router = GoRouter(routes: [
     GoRoute(
-      path: '/',
+      path: KWelcomeView,
       builder: (context, state) => const WelcomeView(),
     ),
     GoRoute(

@@ -73,6 +73,7 @@ class LoginViewBody extends StatelessWidget {
               CustomTextFormField(
                 controller: nameOrEmailController,
                 label: '',
+                 keyboardType: TextInputType.emailAddress,
               ),
               const SizedBox(
                 height: 10.0,
@@ -84,6 +85,7 @@ class LoginViewBody extends StatelessWidget {
               CustomTextFormField(
                 controller: logPasswordController,
                 label: '',
+                 keyboardType: TextInputType.visiblePassword,
               ),
               const SizedBox(
                 height: 20.0,

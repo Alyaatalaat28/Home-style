@@ -59,4 +59,15 @@ Future<UserCredential?> signInWithGoogle()async{
   }
 }
 
+//logOut
+Future<void> logout() async {
+  try {
+    await FirebaseAuth.instance.signOut();
+    emit(LogOutSuccessState());
+  } catch (e) {
+    print('Error occurred during logout: $e');
+    emit(LogOutErrorState());
+  }
+}
+
 }

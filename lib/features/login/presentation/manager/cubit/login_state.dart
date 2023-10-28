@@ -18,3 +18,8 @@ class LoginErrorState extends LoginState{}
 class GoogleUserSignInSuccessState extends LoginState{}
 
 class  GoogleUserSignInErrorState extends LoginState{}
+
+//logOut
+class LogOutSuccessState extends LoginState{}
+
+class LogOutErrorState extends LoginState{}

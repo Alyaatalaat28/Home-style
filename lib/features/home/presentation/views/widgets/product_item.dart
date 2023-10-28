@@ -12,7 +12,7 @@ class ProductItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-          width: 205,
+          width: 230,
           height: 260,
       child: Stack(
         alignment: Alignment.center,
@@ -22,8 +22,8 @@ class ProductItem extends StatelessWidget {
             left: 35,
             child: Align(
               child: Container(
-                width: 205,
-                height: 250,
+                width: 220,
+                height: 230,
                 decoration: BoxDecoration(
                   color: stackColor,
                   borderRadius: BorderRadius.circular(32),
@@ -33,7 +33,7 @@ class ProductItem extends StatelessWidget {
           ),
            Positioned(
             top: 0,
-            left: 45,
+            left: 30,
             child: Align(
               child: SizedBox(
                 width: 145,
@@ -45,8 +45,8 @@ class ProductItem extends StatelessWidget {
             ),
           ),
           Positioned(
-            left: 40,
-            top: 120,
+            left: 60,
+            top: 160,
             child: SizedBox(
               width: 70,
               height: 48,
@@ -54,9 +54,7 @@ class ProductItem extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Text(title,
-                   style: AppStyle.textStyle12Black.copyWith(
-                    fontSize: 11,
-                   )),
+                   style: AppStyle.textStyle12Black),
                   const SizedBox(
                     height: 5,
                   ),

@@ -61,6 +61,7 @@ class SignUpViewBody extends StatelessWidget {
               CustomTextFormField(
                 controller: nameController,
                 label: 'Enter your Name',
+                keyboardType: TextInputType.text,
               ),
               const SizedBox(
                 height: 15.0,
@@ -68,6 +69,7 @@ class SignUpViewBody extends StatelessWidget {
               CustomTextFormField(
                 controller: userNameController,
                 label: 'Enter Username',
+                keyboardType: TextInputType.text,
               ),
               const SizedBox(
                 height: 15.0,
@@ -75,6 +77,7 @@ class SignUpViewBody extends StatelessWidget {
               CustomTextFormField(
                 controller: emailController,
                 label: 'Enter Email',
+                keyboardType: TextInputType.emailAddress,
               ),
               const SizedBox(
                 height: 15.0,
@@ -82,6 +85,7 @@ class SignUpViewBody extends StatelessWidget {
               CustomTextFormField(
                 controller: passwordController,
                 label: 'Enter Password',
+                 keyboardType: TextInputType.visiblePassword,
               ),
               const SizedBox(
                 height: 5.0,
